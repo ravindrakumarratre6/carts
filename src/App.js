@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import OrderPage from './components/OrderPage';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import CartList from './components/CartList';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Home/>} />
+        <Route path='/cartlist' element={<CartList/>}/>
         <Route path="/orders" element={<OrderPage/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<Signup/>} />
